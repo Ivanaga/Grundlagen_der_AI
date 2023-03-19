@@ -3,6 +3,9 @@ NUMBER_OF_CITIES = 100
 POPULATION_SIZE = 10
 
 
+
+print("hui\n")
+
 class Town:
     def __init__(self, index, coordinate_X, coordinate_Y):
         self.index = index
