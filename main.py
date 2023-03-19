@@ -31,8 +31,4 @@ print(population[0].towns[99].index)
 print(population[0].towns[89].coordinate_X)
 print(population[0].towns[89].coordinate_Y)
 print("end\n")
-
-
-
-
-
+#ZXC
