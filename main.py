@@ -1,4 +1,5 @@
 import random
+import math
 NUMBER_OF_CITIES = 100
 POPULATION_SIZE = 10
 
@@ -22,6 +23,12 @@ class Individuals:
         self.towns.append(town)
 
 
+
+def distance_computing(city_1, city_2): # city-1 = X; city_2 = Y
+    return math.sqrt((city_1.coordinate_X - city_2.coordinate_X) ** 2 + (city_1.coordinate_Y - city_2.coordinate_Y) ** 2)
+
+
+
 population = []
 for i in range(10):
     population_ = Individuals(i)
@@ -33,5 +40,10 @@ print("begin\n")
 print(population[0].towns[99].index)
 print(population[0].towns[89].coordinate_X)
 print(population[0].towns[89].coordinate_Y)
+print("distance: ", distance_computing(population[0].towns[0], population[0].towns[1]))
 print("end\n")
-#ZXC
+
+
+
+
+
